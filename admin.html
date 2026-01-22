@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Admin Panel</title>
+
+<link rel="manifest" href="manifest.json">
+<meta name="theme-color" content="#2e7d32">
+
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <h1>🍔 College Mini Canteen</h1>
+  <p>For College Students Only</p>
+</header>
+
+<section class="box" id="adminLogin">
+  <h2>Admin Login</h2>
+  <input type="password" id="adminPass" placeholder="Admin Password">
+  <button onclick="adminLogin()">Login</button>
+</section>
+
+<section class="box" id="adminPanel" style="display:none;">
+  <h2>👨‍🍳 Admin Panel</h2>
+  <input type="text" id="itemName" placeholder="Food / Drink Name">
+  <input type="number" id="itemPrice" placeholder="Price">
+  <button onclick="addItem()">Add Item</button>
+  <h3>Orders List</h3>
+  <ul id="adminMenu"></ul>
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>
